@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Royal Plastic Center</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="menu">
+  <a href="#info">Info</a>
+  <a href="#products">Products</a>
+  <a href="#help">Help</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<h1 class="title">Royal Plastic Center</h1>
+
+<div class="owner-shop" id="info">
+  <div class="glow">
+    <img src="Images_/Owner.jpg">
+    <p>Owner: Rajendra Mahto</p>
+    <p>15+ Years Experience</p>
+    <p>simple and honest person</p>
+  </div>
+  <div class="glow">
+    <img src="Images_/Shop.jpg">
+    <p>Rajendra Plastic & Seeds Shop</p>
+    <p>Note: Hamare ysha sabhi tarah ke plastic ke saman uplsbdh hai</p>
+    <p>SINCE 2010</p>
+  </div>
+</div>
+
+<div class="products" id="products">
+  <h2>Available Products</h2>
+  <div class="gallery">
+
+    <div class="item" onclick="openPopup('Plastic Mug','₹15','sasta aur tikau hai .')">
+      <img src="Images_/image1.jpg">
+      <p class="pname">Plastic Mug</p>
+      <div class="price">₹15</div>
+    </div>
+
+    <div class="item" onclick="openPopup('Plastic Chair','₹300','sabhi rango me aur chale jayada.')">
+      <img src="Images_/image2.jpg">
+      <p class="pname">Plastic Chair</p>
+      <div class="price">₹300</div>
+    </div>
+
+    <div class="item" onclick="openPopup('Jute Rope','Per kg :- ₹60','dikhne me hai thoda normal but chalta hai salo sal.')">
+      <img src="Images_/image3.jpg">
+      <p class="pname">Jute Rope</p>
+      <div class="price">1 kg ₹60</div>
+    </div>
+
+    <div class="item" onclick="openPopup('Nila Drum','₹1200','mahanga hai par chalta ha. ')">
+      <img src="Images_/image4.jpg">
+      <p class="pname">Nila Drum</p>
+      <div class="price">₹1200</div>
+    </div>
+
+    <div class="item" onclick="openPopup('Plastic Stool','₹150','sab rango me aur desigeno me uplabdh hai.')">
+      <img src="Images_/image5.jpg">
+      <p class="pname">Plastic Stool</p>
+      <div class="price">₹150</div>
+    </div>
+
+    <div class="item" onclick="openPopup('Plastic Rope','₹30','sabse majboot radi jo tike salo tak.')">
+      <img src="Images_/image6.jpg">
+      <p class="pname">Plastic Rope</p>
+      <div class="price">₹30</div>
+    </div>
+
+    <div class="item" onclick="openPopup('Tripal','₹500','bahut sare rango me aur tike garmi , barsat , thandhi.')">
+      <img src="Images_/image7.jpg">
+      <p class="pname">Tripal</p>
+      <div class="price">₹500</div>
+    </div>
+
+    <div class="see-more-slide">
+      <a href="more-products.html">See More Products ➜</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="help" id="help">
+  <p class="help-text">Fill this email and send the message you need help!</p>
+  <p class="email-box">mehtamithlesh467@gmail.com</p>
+  <form>
+    action="https://formsubmit.co/your@email.com"
+    method="POST">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Enter above Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+<div id="popup" class="popup">
+  <div class="popup-box">
+    <h3 id="pname"></h3>
+    <p id="pdesc"></p>
+    <p id="pprice"></p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+<div class="info" id="contact">
+  <p>Email: <span class="highlight">mehtamithlesh467@gmail.com</span></p>
+  <p>Phone: <span class="highlight">6287539383</span></p>
+  <p>WhatsApp: <span class="highlight">6287539383</span></p>
+  <p>Instagram: <span class="highlight">szen_3</span></p>
+</div>
+<div class="follow-us">
+  <p>Follow us :</p>
+  <a href="https://www.instagram.com/szen_3" target="_blank">
+    <img src="Images_/insta.png" alt="Instagram">
+  </a>
+  <a href="https://www.facebook.com/Mithlesh Mehta" target="_blank">
+    <img src="Images_/facebook.png" alt="Facebook">
+  </a>
+  <a href="https://wa.me/916287539383" target="_blank">
+    <img src="Images_/whatsapp.png" alt="WhatsApp">
+  </a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
