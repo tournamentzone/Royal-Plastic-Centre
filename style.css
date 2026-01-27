@@ -1,0 +1,250 @@
+body {
+  background:black;
+  color:white;
+  margin:0;
+  text-align:center;
+  font-family:Arial;
+}
+
+.menu {
+  background:linear-gradient(45deg,yellow,black);
+  padding:10px;
+}
+
+.menu a {
+  color:black;
+  margin:10px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.title {
+  font-family:'Pacifico',cursive;
+  font-size:28px;
+  color:gold;
+  text-shadow:0 0 10px gold;
+}
+
+.owner-shop {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.glow {
+  box-shadow:0 0 15px pink;
+  padding:10px;
+}
+
+.owner-shop img {
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.products {
+  margin-top:20px;
+  padding:15px;
+  background: rgba(255, 182, 193, 0.05); /* हल्का pink background */
+  box-shadow: 0 0 15px #ffb6c1, 
+              0 0 30px #ff69b4;  /* light pink glow */
+  border-radius: 10px;
+}
+.products h2 {
+  color: white;
+  text-shadow: 
+    0 0 5px #ffb6c1,
+    0 0 10px #ff69b4,
+    0 0 20px #ff69b4;
+}
+
+.gallery {
+  display:flex;
+  overflow-x:auto;
+}
+
+.item, .see-more-slide {
+  min-width:140px;
+  margin:10px;
+}
+
+.item img {
+  width:140px;
+  height:140px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.price {
+  background:linear-gradient(45deg,yellow,black);
+  color:black;
+  font-weight:bold;
+}
+
+.see-more-slide a {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:140px;
+  background:black;
+  border:2px solid pink;
+  color:pink;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.info {
+  box-shadow:0 0 10px pink;
+  margin:15px;
+  padding:10px;
+}
+
+.highlight {
+  color:hotpink;
+  font-weight:bold;
+}
+
+.help-text {color:white;}
+.email {color:hotpink;font-weight:bold;}
+
+.help input,.help textarea {
+  width:80%;
+  margin:5px;
+  padding:6px;
+}
+.help button {
+  background-color: #1E90FF; /* नीला रंग */
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #1E90FF;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.help button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #1E90FF, 0 0 25px #87CEFA;
+}
+.help-text, 
+.help p, 
+.help input, 
+.help textarea {
+  color: white;   /* text white कर दिया */
+}
+
+.help input, .help textarea {
+  background-color: black;  /* optional: background dark for contrast */
+  border: 1px solid pink;
+  color: white;
+}
+
+.help button {
+  background-color: #1E90FF; /* नीला */
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #1E90FF;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.help button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #1E90FF, 0 0 25px #87CEFA;
+}
+.popup {
+  display:none;
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.8);
+}
+
+.popup-box {
+  background:black;
+  border:2px solid pink;
+  margin:100px auto;
+  padding:20px;
+  width:80%;
+}
+
+.pname {
+  color: white;
+  font-size: 14px;
+  margin: 5px 0;
+  text-shadow:
+    0 0 5px #ffb6c1,
+    0 0 10px #ff69b4;
+}
+
+.follow-us {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.follow-us p {
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.follow-us a img {
+  width: 35px;
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+.follow-us a img:hover {
+  transform: scale(1.2);
+}
+.follow-us {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.follow-us p {
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow:
+    0 0 5px #ffb6c1,
+    0 0 10px #ff69b4;
+}
+
+.follow-us a img {
+  width: 40px;
+  margin: 0 12px;
+  transition: transform 0.3s, filter 0.3s;
+  filter: drop-shadow(0 0 5px #ff69b4)
+          drop-shadow(0 0 10px #ffb6c1);
+}
+
+.follow-us a img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #ff69b4)
+          drop-shadow(0 0 20px #ffb6c1);
+}
+
+.help .email {
+  color: #87CEFA; /* light blue */
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.email-box {
+  display: inline-block;
+  background-color: #1E90FF; /* light blue box */
+  color: black; /* text color */
+  font-weight: bold;
+  padding: 5px 10px; /* thoda thoda space */
+  border-radius: 8px; /* rounded corners */
+  margin-bottom: 10px;
+  font-size: 14px;
+}
