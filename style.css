@@ -248,3 +248,5 @@ body {
   margin-bottom: 10px;
   font-size: 14px;
 }
+/* Mobile View Only */
+@media (max-width: 768px) {
