@@ -250,3 +250,46 @@ body {
 }
 /* Mobile View Only */
 @media (max-width: 768px) {
+
+  /* MOBILE FIX WITHOUT CHANGING HORIZONTAL LAYOUT */
+@media (max-width: 768px) {
+
+  body {
+    margin: 0;
+    overflow-x: hidden;   /* horizontal scroll band */
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .menu {
+    width: 100%;
+    white-space: nowrap;   /* menu horizontal hi rahe */
+    overflow-x: auto;      /* swipe allowed */
+  }
+
+  .menu a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .owner-shop,
+  .gallery {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .popup-box,
+  .help form {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+  }
+}
